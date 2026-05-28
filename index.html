@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="canonical" href="https://devtem.org/">
+  
+  <title>DevTemple - Redirecting to Main Portal</title>
+  <meta name="description" content="DevTemple has consolidated its services. You are being redirected to our primary platform at devtem.org.">
+  <meta name="robots" content="index, follow">
+  
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph":
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+      background-color: #f4f6fb;
+      color: #111;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+   .container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 102, 255, 0.08);
+      max-width: 450px;
+      border: 1px solid #dde3f0;
+    }
+   .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0066ff;
+      margin-bottom: 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    h1 {
+      font-size: 20px;
+      color: #0a0a1a;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+   .cta {
+      display: inline-block;
+      background: #0066ff;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+   .cta:hover {
+      background: #0051cc;
+    }
+   .spinner {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #0066ff;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto 0;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <a href="https://devtem.org/" class="logo">DevTemple</a>
+    <h1>We have moved!</h1>
+    <p>
+      We are consolidating our subdomain services under our main domain to serve you better. 
+      You are being redirected to our primary platform.
+    </p>
+    <a class="cta" href="https://devtem.org/">Go to devtem.org manually</a>
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    const targetUrl = "https://devtem.org/";
+
+    // 1. Immediately fire the client-side redirection [1]
+    location.href = targetUrl;
+
+    // 2. Fallback execution: If location.href encounters browser parsing delays, 
+    // we use replace() to wipe the history state and prevent "Back button" trapping.
+    setTimeout(function() {
+      window.location.replace(targetUrl);
+    }, 1000);
+  </script>
+</body>
+</html>
