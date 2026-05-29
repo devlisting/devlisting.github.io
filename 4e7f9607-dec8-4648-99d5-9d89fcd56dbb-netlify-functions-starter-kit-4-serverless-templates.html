@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Netlify Functions Starter Kit — 4 Serverless Templates | DevTemple</title>
+
+<meta name="title" content="Netlify Functions Starter Kit — 4 Serverless Templates | DevTemple">
+<meta name="description" content="Four production-ready serverless functions for Node.js. Drop any one into your Netlify project, fill in your credentials, and deploy. Every function is token-protected, CORS-ready, and includes example HTML UIs and a health-check page.
+Includes: Brevo bulk mailer with audience targeting · Contact fo">
+<meta name="keywords" content="DevTemple, nodejs, netlify, serverless, supabase, stripe, brevo, backend, api, javascript, boilerplate, starterkit, devtools, template, saas, backend_developer, digital assets, developer marketplace">
+<meta name="author" content="Serverless Functions">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="language" content="English">
+<meta name="theme-color" content="#0066ff">
+
+<link rel="canonical" href="https://i.devtem.org/4e7f9607-dec8-4648-99d5-9d89fcd56dbb-netlify-functions-starter-kit-4-serverless-templates">
+
+<link
+  rel="icon"
+  type="image/png"
+  href="https://devtem.org/assets/images/logo.png"
+>
+
+<link
+  rel="apple-touch-icon"
+  href="https://devtem.org/assets/images/logo.png"
+>
+
+<!-- Open Graph -->
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DevTemple">
+
+<meta
+  property="og:title"
+  content="Netlify Functions Starter Kit — 4 Serverless Templates | DevTemple"
+>
+
+<meta
+  property="og:description"
+  content="Four production-ready serverless functions for Node.js. Drop any one into your Netlify project, fill in your credentials, and deploy. Every function is token-protected, CORS-ready, and includes example HTML UIs and a health-check page.
+Includes: Brevo bulk mailer with audience targeting · Contact fo"
+>
+
+<meta
+  property="og:url"
+  content="https://i.devtem.org/4e7f9607-dec8-4648-99d5-9d89fcd56dbb-netlify-functions-starter-kit-4-serverless-templates"
+>
+
+<meta
+  property="og:image"
+  content="https://cdn.devtem.org/u/63680b4f-2eba-405d-8074-2ec5905fb3da/assets/images/f3cf76e9-1000098676.png"
+>
+
+<meta
+  property="og:image:secure_url"
+  content="https://cdn.devtem.org/u/63680b4f-2eba-405d-8074-2ec5905fb3da/assets/images/f3cf76e9-1000098676.png"
+>
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta
+  property="og:image:alt"
+  content="Netlify Functions Starter Kit — 4 Serverless Templates"
+>
+
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+>
+
+<meta
+  name="twitter:title"
+  content="Netlify Functions Starter Kit — 4 Serverless Templates | DevTemple"
+>
+
+<meta
+  name="twitter:description"
+  content="Four production-ready serverless functions for Node.js. Drop any one into your Netlify project, fill in your credentials, and deploy. Every function is token-protected, CORS-ready, and includes example HTML UIs and a health-check page.
+Includes: Brevo bulk mailer with audience targeting · Contact fo"
+>
+
+<meta
+  name="twitter:image"
+  content="https://cdn.devtem.org/u/63680b4f-2eba-405d-8074-2ec5905fb3da/assets/images/f3cf76e9-1000098676.png"
+>
+
+<meta
+  name="twitter:image:alt"
+  content="Netlify Functions Starter Kit — 4 Serverless Templates"
+>
+
+<meta
+  name="twitter:url"
+  content="https://i.devtem.org/4e7f9607-dec8-4648-99d5-9d89fcd56dbb-netlify-functions-starter-kit-4-serverless-templates"
+>
+
+<meta
+  name="twitter:site"
+  content="@fscss_ttr"
+>
+
+<meta
+  name="twitter:creator"
+  content="@fscss_ttr"
+>
+
+<!-- Schema.org JSON-LD -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication"
+
+  "name": "Netlify Functions Starter Kit — 4 Serverless Templates",
+
+  "image": "https://cdn.devtem.org/u/63680b4f-2eba-405d-8074-2ec5905fb3da/assets/images/f3cf76e9-1000098676.png",
+
+  "description": "Four production-ready serverless functions for Node.js. Drop any one into your Netlify project, fill in your credentials, and deploy. Every function is token-protected, CORS-ready, and includes example HTML UIs and a health-check page.\nIncludes: Brevo bulk mailer with audience targeting · Contact fo",
+
+  "category": "backend_developer",
+
+  "url": "https://i.devtem.org/4e7f9607-dec8-4648-99d5-9d89fcd56dbb-netlify-functions-starter-kit-4-serverless-templates",
+
+  "brand": {
+    "@type": "Brand",
+    "name": "DevTemple"
+  },
+
+  "seller": {
+    "@type": "Person",
+    "name": "Serverless Functions",
+    "url": "https://devtem.org/home?q=serverless_functions"
+  },
+
+  "offers": {
+
+    "@type": "Offer",
+
+    "url": "https://devtem.org/p?id=4e7f9607-dec8-4648-99d5-9d89fcd56dbb",
+
+    "priceCurrency": "NGN",
+
+    "price": 8900,
+
+    "availability": "https://schema.org/InStock",
+
+    "itemCondition":
+      "https://schema.org/NewCondition"
+
+  },
+
+  "publisher": {
+
+    "@type": "Organization",
+
+    "name": "DevTemple",
+
+    "url": "https://devtem.org",
+
+    "logo": {
+
+      "@type": "ImageObject",
+
+      "url":
+        "https://devtem.org/assets/images/logo.png"
+
+    }
+
+  }, 
+  "mainEntityOfPage": {
+  "@type": "WebPage",
+  "@id": "https://i.devtem.org/4e7f9607-dec8-4648-99d5-9d89fcd56dbb-netlify-functions-starter-kit-4-serverless-templates"
+}
+}
+
+</script>
+
+<link
+  rel="stylesheet"
+  href="/assets/styles/listings-global.css"
+>
+
+<body>
+
+<header>
+  <a href="https://devtem.org">DevTemple</a>
+</header>
+
+<main>
+<img
+  src="https://cdn.devtem.org/u/63680b4f-2eba-405d-8074-2ec5905fb3da/assets/images/f3cf76e9-1000098676.png"
+  alt="Netlify Functions Starter Kit — 4 Serverless Templates"
+  loading="lazy"
+  decoding="async"
+  class="product-img"
+>
+
+  <span class="badge">
+    backend_developer
+  </span>
+
+  <h1>Netlify Functions Starter Kit — 4 Serverless Templates</h1>
+
+  <p class="meta">
+    By <b><a href="https://devtem.org/s?s=63680b4f-2eba-405d-8074-2ec5905fb3da" title="Subscribe — Serverless Functions">Serverless Functions</a></b>
+  </p>
+
+  <p class="price">
+    ₦8,900
+  </p>
+
+  <p class="desc">
+    Four production-ready serverless functions for Node.js. Drop any one into your Netlify project, fill in your credentials, and deploy. Every function is token-protected, CORS-ready, and includes example HTML UIs and a health-check page.
+Includes: Brevo bulk mailer with audience targeting · Contact form with auto-reply · Stripe webhook handler with Supabase payment logging · Image upload to Supabase Storage with public URL return.
+<a href='https://devtem.org/home?q=nodejs' class='card-tag'>#nodejs</a> <a href='https://devtem.org/home?q=netlify' class='card-tag'>#netlify</a> <a href='https://devtem.org/home?q=serverless' class='card-tag'>#serverless</a> <a href='https://devtem.org/home?q=supabase' class='card-tag'>#supabase</a> <a href='https://devtem.org/home?q=stripe' class='card-tag'>#stripe</a> <a href='https://devtem.org/home?q=brevo' class='card-tag'>#brevo</a> <a href='https://devtem.org/home?q=backend' class='card-tag'>#backend</a> <a href='https://devtem.org/home?q=api' class='card-tag'>#api</a> <a href='https://devtem.org/home?q=javascript' class='card-tag'>#javascript</a> <a href='https://devtem.org/home?q=boilerplate' class='card-tag'>#boilerplate</a> <a href='https://devtem.org/home?q=starterkit' class='card-tag'>#starterkit</a> <a href='https://devtem.org/home?q=devtools' class='card-tag'>#devtools</a> <a href='https://devtem.org/home?q=template' class='card-tag'>#template</a> <a href='https://devtem.org/home?q=saas' class='card-tag'>#saas</a>
+  </p>
+
+  <a
+    href="https://devtem.org/p?id=4e7f9607-dec8-4648-99d5-9d89fcd56dbb"
+    class="cta"
+  >
+    View Product
+  </a>
+
+</main>
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>
+        DevTemple
+      </h3>
+
+      <p>
+        Marketplace for premium digital products,
+        developer assets, tools, and creative resources.
+      </p>
+
+    </div>
+
+    <div>
+
+      <h3>
+        Marketplace
+      </h3>
+
+      <a href="https://devtem.org/home">
+        Browse Products
+      </a>
+
+      <a href="https://devtem.org/home?q=templates">
+        Templates
+      </a>
+
+      <a href="https://devtem.org/home?q=script">
+        Scripts
+      </a>
+
+      <a href="https://devtem.org/home?q=ui">
+        UI Kits
+      </a>
+
+    </div>
+
+    <div>
+
+      <h3>
+        Company
+      </h3>
+
+      <a href="https://devtem.org/about">
+        About
+      </a>
+
+      <a href="https://devtem.org/contact">
+        Contact
+      </a>
+
+      <a href="https://devtem.org/faq">
+        FAQ
+      </a>
+
+    </div>
+
+    <div>
+
+      <h3>
+        Legal
+      </h3>
+
+      <a href="https://devtem.org/terms">
+        Terms
+      </a>
+
+      <a href="https://devtem.org/privacy">
+        Privacy
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    ©
+    <span id="copyright-year">
+      2026
+    </span>
+
+    <a rel="me" href="https://devtem.org">DevTemple</a>.
+    All rights reserved.
+
+  </div>
+
+</footer>
+
+<script>
+
+document
+  .getElementById("copyright-year")
+  .textContent = new Date().getFullYear();
+
+</script>
+
+<script
+  src="/assets/scripts/listings-global.js"
+  type="module" defer></script>
+</body>
+</html>
