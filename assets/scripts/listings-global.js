@@ -1,3 +1,1 @@
-
-// Global scripts for static SEO pages generated dynamically
-console.log("DevTemple dynamic global elements initialized.");
+import { * } from "https://devtem.org/assets/scripts/listings-global.js";
