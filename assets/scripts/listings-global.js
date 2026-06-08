@@ -1,1 +1,1 @@
-import { * } from "https://devtem.org/assets/scripts/listings-global.js";
+import "https://devtem.org/assets/scripts/listings-global.js";
