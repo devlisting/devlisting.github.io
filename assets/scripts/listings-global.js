@@ -1,4 +1,7 @@
+const desc = document.querySelector(".desc");
 const uMention = document.querySelectorAll(".user-mention");
+desc?.innerHTML = desc?.innerHTML?.replace(/\*\*([^\*]+)\*\*/g, "<b>$1</b>")?.replace(/\s_{3,}\s/g, "<hr>");
+
 uMention.forEach(um => {
   // 1. Apply Styles
   um.style.cssText = `opacity:99%; text-decoration: 0.2px underline var(--glass-border); font-family: "ADLaM Display", monospace; cursor: pointer;`;
