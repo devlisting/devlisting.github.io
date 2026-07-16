@@ -1,6 +1,5 @@
 const desc = document.querySelector(".desc");
 const uMention = document.querySelectorAll(".user-mention");
-desc?.innerHTML = desc?.innerHTML?.replace(/\*\*([^\*]+)\*\*/g, "<b>$1</b>")?.replace(/\s_{3,}\s/g, "<hr>");
 
 uMention.forEach(um => {
   // 1. Apply Styles
@@ -12,6 +11,7 @@ uMention.forEach(um => {
     location.href = "https://devtem.org/s?s=" + mentionName;
   }
 });
+desc?.innerHTML = desc?.innerHTML?.replace(/\*\*([^\*]+)\*\*/g, "<b>$1</b>")?.replace(/\s_{3,}\s/g, "<hr>");
 
 const main = document.querySelector("main");
 const becomeCard = document.createElement("div");
@@ -31,4 +31,5 @@ becomeCard.innerHTML = `
       </div>
     </div>
 `;
+
 main.appendChild(becomeCard);
