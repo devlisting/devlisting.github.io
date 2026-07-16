@@ -11,7 +11,8 @@ uMention.forEach(um => {
     location.href = "https://devtem.org/s?s=" + mentionName;
   }
 });
-desc.innerHTML = desc.innerHTML.replace(/\*\*([^\*]+)\*\*/g, "<b>$1</b>").replace(/\s_{3,}\s/g, "<hr>");
+
+desc.innerHTML = desc.innerHTML.replace(/\*\*([^\*]+)\*\*/g, "<b>$1</b>").replace(/\*([^\*]+)\*/g, "<i>$1</i>").replace(/\n{1,}/g, "<br>").replace(/\s_{3,}\s/g, "<hr>");
 
 const main = document.querySelector("main");
 const becomeCard = document.createElement("div");
